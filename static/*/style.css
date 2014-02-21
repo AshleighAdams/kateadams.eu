@@ -157,7 +157,7 @@ div.contact_in
 	transition: background-color 0.2s ease-in-out;
 	
 	background-color: rgba(0, 0, 0, 0.5);
-	//box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75) inset;
+	/*box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75) inset;*/
 }
 
 div.contact_in:hover
