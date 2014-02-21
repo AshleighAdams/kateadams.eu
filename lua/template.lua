@@ -3,8 +3,10 @@ return {
 	make = function(self, res, content)
 		content = content or {}
 		
-		table.insert(content,  {self:contacts()})
-		
+		local contacts = {self:contacts()}
+		for k,v in pairs(contacts) do
+			table.insert(content, v)
+		end	
 		
 		local template = tags.html
 		{
