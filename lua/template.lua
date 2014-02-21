@@ -14,13 +14,15 @@ end
 return {
 	make = function(self, res, content)
 		content = content or {}
-		
 		table_mergeinto(content, {self:contacts()})
+		
+		res:append("<!DOCTYPE html>\n") -- tell them HTML is incoming
 		
 		local template = tags.html
 		{
 			tags.head
 			{
+				tags.meta { charset = "utf-8" },
 				tags.title { "Kate Adams" },
 				tags.script { src = "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" },
 				tags.script { src = "/script.js" },
@@ -47,11 +49,8 @@ return {
 						{
 							tags.div { class = "footer" }
 							{
-								tags.center
-								{
-									tags.NOESCAPE,
-									"&copy; 2014 Kate Adams"
-								}
+								tags.NOESCAPE,
+								"&copy; 2014 Kate Adams"
 							}
 						}
 					}
@@ -62,14 +61,11 @@ return {
 		template.to_response(res)
 	end,
 	section = function(self, contents)
-		return tags.div { class = "slide window" }
+		return tags.div { class = "slide window center" }
 		{
-			tags.center
+			tags.h3
 			{
-				tags.h3
-				{
-					contents
-				}
+				contents
 			}
 		}
 	end,
@@ -89,10 +85,7 @@ return {
 				main
 			}
 		else
-			return tags.span
-			{
-				main
-			}
+			return main
 		end
 	end,
 	contacts = function(self, name, user)
@@ -103,7 +96,7 @@ return {
 			{
 				self:contact("Steam",    "c0bra61",            "http://steamcommunity.com/id/c0bra61"),
 				self:contact("Jabber",   "self@kateadams.eu",  "xmpp://self@kateadams.eu"),
-				self:contact("Email",    "self@kateadams.eu",  "mailto://self@kateadams.eu"),
+				self:contact("Email",    "self@kateadams.eu",  "mailto:self@kateadams.eu"),
 				self:contact("IRC",      "Freenode / Kobra",   "irc://irc.freenode.net/Kobra,isnick"),
 				
 				self:contact("GitHub",   "KateAdams",          "http://github.com/KateAdams"),
