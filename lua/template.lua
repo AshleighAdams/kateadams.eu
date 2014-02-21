@@ -1,12 +1,21 @@
 
+local function table_mergeinto(old, ...)
+	local args = {...}
+	
+	for k,v in ipairs(args) do
+		if type(v) ~= "table" then error(string.format("invalid argument %d (expected 'table', got '%s')", k, type(v)), 2) end
+			
+		for kk,vv in ipairs(v) do
+			table.insert(old, vv)
+		end
+	end
+end
+
 return {
 	make = function(self, res, content)
 		content = content or {}
 		
-		local contacts = {self:contacts()}
-		for k,v in pairs(contacts) do
-			table.insert(content, v)
-		end	
+		table_mergeinto(content, {self:contacts()})
 		
 		local template = tags.html
 		{
