@@ -1,0 +1,161 @@
+
+body
+{
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 22px;
+	text-align:justify;
+	
+	color: #fafafa;
+	background-color: #904257;
+	background: url("background.png") fixed;
+	background-position: center 0px;
+}
+
+div
+{
+	border-radius: 4px;
+}
+
+header
+{
+	text-align: center;
+}
+
+main
+{
+	margin: 0 auto;
+	width: 900px;
+}
+
+div.content
+{
+	background: rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+	
+	padding: 10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+div.window
+{
+	background-color: #133377;
+	background: url("background_altblur.png") fixed;
+	background-position: center 0px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75) inset;
+}
+
+div.footer_bg
+{
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	background: url("background.png") fixed;
+	background-position: center 0px;
+}
+
+div.footer
+{
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
+	color: rgba(255,255,255,0.5);
+}
+
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center,
+cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4,
+h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre,
+q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th,
+thead, tr, tt, u, ul, var
+{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+}
+
+h1 b, h1 strong, h2 b, h2 strong, h3 b, h3 strong, h4 b, h4 strong, h5 b,
+h5 strong, h6 b, h6 strong
+{
+	font-weight:600;
+}
+h1 { font-size:80px;  line-height:100px; text-shadow: 0px 0px 30px #fff; }
+h2 { font-size:40px;  line-height:60px;  text-shadow: 0px 0px 20px #fff; }
+h3 { font-size:32px;  line-height:48px;  text-shadow: 0px 0px 10px #fff; }
+h4 { font-size:22px;  line-height:34px;  text-shadow: 0px 0px 5px #fff; }
+h5 { font-size:18px;  line-height:26px;  text-shadow: 0px 0px 2px #fff; }
+h6 { font-size:16px;  line-height:22px;  text-shadow: 0px 0px 1px #fff; }
+
+p
+{
+	margin-bottom: 10px;
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+/* The menu bar items... */
+
+div.menu
+{
+	display: inline-block;
+	font-size: 18px;
+	font-weight:600;
+	width: 150px;
+	
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+	transition: all 0.2s ease-in-out;
+}
+
+div.menu:hover
+{
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+}
+
+/* Contact info */
+
+div.contacts
+{
+	text-align: center;
+}
+
+div.contact
+{
+	display: inline-block;
+	width: 180px;
+	height: 48px;
+	margin: 0px 5px 10px 5px;
+	text-align: center;
+	
+	background-color: #904257;
+	background: url("background_blur.png") fixed;
+	background-position: center 0px;
+	
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+	transition: background-image 0.2s ease-in-out;
+}
+
+div.contact:hover
+{
+	background-color: #133377;
+	background-image: url("background_altblur.png");
+}
+
+div.contact_in
+{
+	transition: background-color 0.2s ease-in-out;
+	
+	background-color: rgba(0, 0, 0, 0.5);
+	//box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75) inset;
+}
+
+div.contact_in:hover
+{
+	background-color: rgba(0, 0, 0, 0);
+}
