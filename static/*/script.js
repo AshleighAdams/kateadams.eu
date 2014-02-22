@@ -16,6 +16,8 @@ $(document).ready(function(){
 	$('.slide').each(function(){
 		var elm = $(this);
 		
+		slide(elm, speed, "center", 0);
+		
 		$window.scroll(function() {
 			slide(elm, speed, "center", 0);
 		});

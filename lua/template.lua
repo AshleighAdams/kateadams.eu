@@ -92,7 +92,7 @@ return {
 		
 		if #links ~= 0 then
 			local to = math.ceil(#links / 4) * 4
-			for i = 1, 4 do
+			for i = 1, to do
 				local v = links[i] or {}
 				table.insert(links_elms, self:contact(v.title, v.info, v.url))
 			end
