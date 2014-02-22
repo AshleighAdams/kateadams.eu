@@ -1,15 +1,3 @@
-function scroll_to(frag)
-{
-	if(!frag)
-		frag = window.location.hash;
-	
-	if(!frag)
-		return;
-	
-	$('html, body').animate({
-        scrollTop: $(frag).offset().top
-    }, 500);
-}
 
 $(document).ready(function(){
 	$window = $(window);
@@ -33,7 +21,6 @@ $(document).ready(function(){
 		});
 	});
 	
-	scrollto();
 });
 
 
