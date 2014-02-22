@@ -74,5 +74,18 @@ return {
 		else
 			return main
 		end
+	end,
+	project = function(self, name, body)
+		return tags.div { class = "slide project" }
+		{
+			tags.div { class = "project_in" }
+			{
+				tags.div { class = "project_header" } { name },
+				tags.div { class = "project_body" }
+				{
+					body
+				}
+			}
+		}
 	end
 }
