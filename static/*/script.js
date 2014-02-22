@@ -1,3 +1,16 @@
+function scroll_to(frag)
+{
+	if(!frag)
+		frag = window.location.hash;
+	
+	if(!frag)
+		return;
+	
+	$('html, body').animate({
+        scrollTop: $(frag).offset().top
+    }, 500);
+}
+
 $(document).ready(function(){
 	$window = $(window);
 	var speed = 0.5;
@@ -19,7 +32,8 @@ $(document).ready(function(){
 			slide(elm, speed, "center", 0);
 		});
 	});
-
+	
+	scrollto();
 });
 
 

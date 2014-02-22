@@ -1,3 +1,8 @@
+local function escape_section(sect)
+	sect = sect:gsub("&", "and")
+	sect = sect:gsub(" ", "-")
+	return sect:lower()
+end
 
 return {
 	make = function(self, res, content)
@@ -47,12 +52,19 @@ return {
 	
 		template.to_response(res)
 	end,
-	section = function(self, contents)
+	section = function(self, contents)		
+		local safelink = escape_section(contents)
+		local hashed = "#" .. safelink
+		
 		return tags.div { class = "slide window section" }
 		{
 			tags.h3
 			{
-				contents
+				tags.a { href = "#" .. safelink,
+					onclick="scroll_to(\"" .. hashed .. "\");", id = safelink }
+				{
+					contents
+				}
 			}
 		}
 	end,
@@ -75,7 +87,17 @@ return {
 			return main
 		end
 	end,
-	project = function(self, name, body)
+	project = function(self, name, body, ...)
+		local links_elms = {}
+		local links = {...}
+		
+		if #links ~= 0 then
+			for i = 1, 4 do
+				local v = links[i] or {}
+				table.insert(links_elms, self:contact(v.title, v.info, v.url))
+			end
+		end
+		
 		return tags.div { class = "slide project" }
 		{
 			tags.div { class = "project_in" }
@@ -83,7 +105,11 @@ return {
 				tags.div { class = "project_header" } { name },
 				tags.div { class = "project_body" }
 				{
-					body
+					body,
+					tags.div { class = "contacts", style = "" }
+					{
+						unpack(links_elms)
+					}
 				}
 			}
 		}

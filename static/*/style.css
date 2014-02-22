@@ -145,8 +145,9 @@ div.contact
 	display: inline-block;
 	width: 180px;
 	height: 48px;
-	margin: 0px 5px 10px 5px;
+	margin: 10px 5px 0px 5px;
 	text-align: center;
+	
 	
 	background-color: #904257;
 	background: url("background_blur.png") fixed;
@@ -212,4 +213,9 @@ div.project_header
 div.project_body
 {
 	/*background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+div.project div.contact
+{
+	width: calc( (760px - 20px * 4) / 4);
 }

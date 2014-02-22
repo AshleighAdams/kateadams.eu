@@ -47,16 +47,40 @@ local function index(req, res)
 		lorem_ipsum,
 		
 		template:section("Projects"),
-		
+			
 			template:project("LuaServer", tags.div
-			{
-				[[A complete HTTP web server written entirley in Lua.]]
-			}),
+				{
+					[[A complete HTTP web server written entirley in Lua.]]
+				},
+				{
+					title = "Source",
+					info = "GitHub",
+					url = "http://github.com/KateAdams/LuaServer"
+				},
+				{
+					title = "Language",
+					info = "Lua"
+				},
+				{
+					title = "Active",
+					info = "2012 - Present"
+				}
+			),
 			
 			template:project("lua-pty", tags.div
-			{
-				[[A Lua binding to Linux's forkpty() functions, enabling the ability to write a terminal emulator in Lua.]]
-			}),
+				{
+					[[A Lua binding to Linux's forkpty() functions, enabling the ability to write a terminal emulator in Lua.]]
+				},
+				{
+					title = "Source",
+					info = "GitHub",
+					url = "http://github.com/KateAdams/lua-pty"
+				},
+				{
+					title = "Language",
+					info = "Lua, C++"
+				}
+			),
 		
 		template:section("Contact & Links"),
 		tags.div { class = "contacts" }
