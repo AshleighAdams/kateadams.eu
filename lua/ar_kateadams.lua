@@ -76,14 +76,27 @@ Etiam ornare massa et facilisis viverra. Aliquam sed odio malesuada, sollicitudi
 
 Nunc rhoncus, erat mattis suscipit iaculis, justo sem malesuada metus, feugiat auctor felis tellus nec turpis. Vivamus tincidunt sagittis odio quis condimentum. Nulla non tristique augue. Vivamus vel ipsum est. Fusce vel feugiat massa, non vulputate eros. Ut orci enim, consectetur at sagittis a, lacinia sit amet neque. Maecenas quis volutpat sapien.
 
-In facilisis sit amet sapien at lacinia. In vitae volutpat risus, quis placerat libero. Nullam est odio, pellentesque nec velit porttitor, interdum placerat diam. Vivamus facilisis, dolor et euismod aliquam, magna urna imperdiet urna, et rhoncus urna nisi sed ligula. Mauris vulputate mi quam, sed consectetur est gravida ut. Maecenas vehicula pulvinar laoreet. Suspendisse eget eros sed nulla euismod fermentum. Curabitur ipsum nisl, blandit sit amet molestie id, scelerisque id mi.
-
-]]
+In facilisis sit amet sapien at lacinia. In vitae volutpat risus, quis placerat libero. Nullam est odio, pellentesque nec velit porttitor, interdum placerat diam. Vivamus facilisis, dolor et euismod aliquam, magna urna imperdiet urna, et rhoncus urna nisi sed ligula. Mauris vulputate mi quam, sed consectetur est gravida ut. Maecenas vehicula pulvinar laoreet. Suspendisse eget eros sed nulla euismod fermentum. Curabitur ipsum nisl, blandit sit amet molestie id, scelerisque id mi.]]
 
 local function index(req, res)
 	local contents = {
 		template:section("Some junk so you can scroll"),
-		lorem_ipsum
+		lorem_ipsum,
+		
+		template:section("Contact & Links"),
+		tags.div { class = "contacts" }
+		{
+			template:contact("Steam",    "c0bra61",            "http://steamcommunity.com/id/c0bra61"),
+			template:contact("Jabber",   "self@kateadams.eu",  "xmpp://self@kateadams.eu"),
+			template:contact("Email",    "self@kateadams.eu",  "mailto:self@kateadams.eu"),
+			template:contact("IRC",      "Freenode / Kobra",   "irc://irc.freenode.net/Kobra,isnick"),
+			
+			template:contact("GitHub",   "KateAdams",          "http://github.com/KateAdams"),
+			template:contact("YouTube",  "GlitchesofWar",      "http://youtube.com/GlitchesofWar"),
+			template:contact("Reddit",   "c0bra51",            "http://reddit.com/u/c0bra51"),
+			template:contact(),
+			
+		}
 	}	
 	template:make(res, contents)
 end

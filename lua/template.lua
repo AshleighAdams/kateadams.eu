@@ -1,20 +1,7 @@
 
-local function table_mergeinto(old, ...)
-	local args = {...}
-	
-	for k,v in ipairs(args) do
-		if type(v) ~= "table" then error(string.format("invalid argument %d (expected 'table', got '%s')", k, type(v)), 2) end
-			
-		for kk,vv in ipairs(v) do
-			table.insert(old, vv)
-		end
-	end
-end
-
 return {
 	make = function(self, res, content)
 		content = content or {}
-		table_mergeinto(content, {self:contacts()})
 		
 		res:append("<!DOCTYPE html>\n") -- tell them HTML is incoming
 		
@@ -61,7 +48,7 @@ return {
 		template.to_response(res)
 	end,
 	section = function(self, contents)
-		return tags.div { class = "slide window center" }
+		return tags.div { class = "slide window section" }
 		{
 			tags.h3
 			{
@@ -87,23 +74,5 @@ return {
 		else
 			return main
 		end
-	end,
-	contacts = function(self, name, user)
-		return
-			self:section("Contact & Links"),
-			tags.br,
-			tags.div { class = "contacts" }
-			{
-				self:contact("Steam",    "c0bra61",            "http://steamcommunity.com/id/c0bra61"),
-				self:contact("Jabber",   "self@kateadams.eu",  "xmpp://self@kateadams.eu"),
-				self:contact("Email",    "self@kateadams.eu",  "mailto:self@kateadams.eu"),
-				self:contact("IRC",      "Freenode / Kobra",   "irc://irc.freenode.net/Kobra,isnick"),
-				
-				self:contact("GitHub",   "KateAdams",          "http://github.com/KateAdams"),
-				self:contact("YouTube",  "GlitchesofWar",      "http://youtube.com/GlitchesofWar"),
-				self:contact("Reddit",   "c0bra51",            "http://reddit.com/u/c0bra51"),
-				self:contact(),
-				
-			}
 	end
 }

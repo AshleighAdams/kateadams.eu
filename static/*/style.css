@@ -123,7 +123,20 @@ div.menu:hover
 	text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
 }
 
+div.section
+{
+	text-align: center;
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+
+div.section:first-child
+{
+	margin-top: 0px;
+}
+
 /* Contact info */
+
 
 div.contacts
 {
