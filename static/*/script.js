@@ -13,7 +13,8 @@ $(document).ready(function(){
 		elm.css({ backgroundPosition: coords });
 	}
 	
-	$('.slide').each(function(){
+	$(".slide").each(function()
+	{
 		var elm = $(this);
 		
 		slide(elm, speed, "center", 0);
@@ -22,7 +23,6 @@ $(document).ready(function(){
 			slide(elm, speed, "center", 0);
 		});
 	});
-	
 });
 
 

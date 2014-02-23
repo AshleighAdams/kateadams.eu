@@ -72,14 +72,21 @@ local function index(req, res)
 					[[A Lua binding to Linux's forkpty() functions, enabling the ability to write a terminal emulator in Lua.]]
 				},
 				{
-					title = "Source",
-					info = "GitHub",
-					url = "http://github.com/KateAdams/lua-pty"
+					title = "Source", info = "GitHub", url = "http://github.com/KateAdams/lua-pty"
 				},
 				{
-					title = "Language",
-					info = "Lua, C++"
+					title = "Language", info = "Lua, C++"
 				}
+			),
+			
+			template:project("Consor", tags.div
+				{
+					[[A modern replacement to ncurses.  Provides object orientated C++ code to create CLI-based user interfaces.]]
+				},
+				{
+					title = "Source", info = "GitHub", url = "http://github.com/KateAdams/Consor"
+				},
+				{ title = "Language", info = "C++" }
 			),
 		
 		template:section("Contact & Links"),
