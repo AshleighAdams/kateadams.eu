@@ -90,7 +90,7 @@ local function index(req, res)
 			),
 		
 		template:section("Contact & Links"),
-		tags.div { class = "contacts" }
+		tags.div { class = "contacts", style = "padding-bottom: 10px;" }
 		{
 			template:contact("Steam",    "c0bra61",            "http://steamcommunity.com/id/c0bra61"),
 			template:contact("Jabber",   "self@kateadams.eu",  "xmpp://self@kateadams.eu"),
