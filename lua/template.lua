@@ -31,19 +31,16 @@ return {
 				},
 				tags.main { class = "slide wrapper" }
 				{
-					tags.div { class = "content" }
+					tags.div { class = "content window slide" }
 					{
 						unpack(content)
 					},
 					tags.footer
 					{
-						tags.div { class = "slide footer_bg" }
+						tags.div { class = "footer" }
 						{
-							tags.div { class = "footer" }
-							{
-								tags.NOESCAPE,
-								"&copy; 2014 Kate Adams"
-							}
+							tags.NOESCAPE,
+							"&copy; 2014 Kate Adams"
 						}
 					}
 				}
@@ -67,8 +64,13 @@ return {
 			}
 		}
 	end,
-	contact = function(self, name, user, url)
-		local main = tags.div { class = "slide contact" }
+	contact = function(self, name, user, url, shadow)
+		local style
+		if shadow == false then
+			style = "box-shadow: none;"
+		end
+		
+		local main = tags.div { class = "slide contact", style = style }
 		{
 			tags.div { class = "contact_in" }
 			{
@@ -94,7 +96,7 @@ return {
 			local to = math.ceil(#links / 4) * 4
 			for i = 1, to do
 				local v = links[i] or {}
-				table.insert(links_elms, self:contact(v.title, v.info, v.url))
+				table.insert(links_elms, self:contact(v.title, v.info, v.url, false))
 			end
 		end
 		

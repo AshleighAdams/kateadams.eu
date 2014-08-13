@@ -44,25 +44,20 @@ div.window
 	background-color: #133377;
 	background: url("background_altblur.png") fixed;
 	background-position: center 0px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75) inset;
-}
-
-div.footer_bg
-{
-	border-top-right-radius: 0px;
-	border-top-left-radius: 0px;
-	background: url("background.png") fixed;
-	background-position: center 0px;
+	/* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75) inset; */
 }
 
 div.footer
 {
-	border-top-right-radius: 0px;
-	border-top-left-radius: 0px;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
-	color: rgba(255,255,255,0.5);
 	text-align: center;
 	font-size: 10pt;
+}
+
+div.code
+{
+	font-family: monospace;
+	font-size: 10pt;
+	margin: 5px;
 }
 
 a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center,
@@ -150,7 +145,7 @@ div.contact
 	
 	
 	background-color: #904257;
-	background: url("background_blur.png") fixed;
+	background: url("background_altblur.png") fixed;
 	background-position: center 0px;
 	
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
@@ -160,7 +155,7 @@ div.contact
 div.contact:hover
 {
 	background-color: #133377;
-	background-image: url("background_altblur.png");
+	background-image: url("background_alt.png");
 }
 
 div.contact_in
@@ -186,7 +181,7 @@ div.project
 	margin-top: 22px;
 	
 	background-color: #904257;
-	background: url("background_blur.png") fixed;
+	background: url("background_altblur.png") fixed;
 	background-position: center 0px;
 	
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
