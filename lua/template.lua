@@ -5,7 +5,7 @@ local function escape_section(sect)
 end
 
 return {
-	make = function(self, res, content)
+	make = function(self, res, content, body)
 		content = content or {}
 		
 		res:append("<!DOCTYPE html>\n") -- tell them HTML is incoming
@@ -19,7 +19,8 @@ return {
 				tags.script { src = "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" },
 				tags.script { src = "/script.js" },
 				tags.link { href = "//fonts.googleapis.com/css?family=Open+Sans:300,600", rel = "stylesheet", type="text/css" },
-				tags.link { href = "/style.css", rel = "stylesheet", type="text/css" }
+				tags.link { href = "/style.css", rel = "stylesheet", type="text/css" },
+				unpack(body or {})
 			},
 			tags.body { class = "slide" }
 			{
