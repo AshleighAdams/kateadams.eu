@@ -63,7 +63,7 @@ local function index(req, res)
 // C++/C#
 int x = cfg["Window Information"]["X"].GetValue<int>(0);
 -- Lua
-local x = cfg["Window Information"].X.GetValue(0)
+local x = cfg["Window Information"].X:value(0)
 ]]
 					}
 				},
@@ -77,7 +77,7 @@ local x = cfg["Window Information"].X.GetValue(0)
 		tags.div { class = "contacts", style = "padding-bottom: 10px;" }
 		{
 			template:contact("Steam",    "c0bra61",            "http://steamcommunity.com/id/c0bra61"),
-			template:contact("Jabber",   "self@kateadams.eu",  "xmpp://self@kateadams.eu"),
+			template:contact("XMPP",     "self@kateadams.eu",  "xmpp://self@kateadams.eu"),
 			template:contact("Email",    "self@kateadams.eu",  "mailto:self@kateadams.eu"),
 			template:contact("IRC",      "Freenode / Kobra",   "irc://irc.freenode.net/Kobra,isnick"),
 			
