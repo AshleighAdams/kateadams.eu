@@ -1,3 +1,6 @@
+local hosts = require("luaserver.hosts")
+local tags = require("luaserver.tags")
+
 local template = include("template.lua")
 
 local kateadams = hosts.get("kateadams.eu")

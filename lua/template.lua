@@ -1,3 +1,5 @@
+local tags = require("luaserver.tags")
+
 local function escape_section(sect)
 	sect = sect:gsub("&", "and")
 	sect = sect:gsub(" ", "-")
