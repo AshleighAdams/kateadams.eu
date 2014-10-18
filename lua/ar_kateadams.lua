@@ -1,6 +1,12 @@
 local template = include("template.lua")
 
-local kateadams = hosts.get(".*kateadams.eu")
+local kateadams = hosts.get("kateadams.eu")
+local self = hosts.get("self.kateadams.eu")
+
+local function add(...)
+	kateadams:add(...)
+	self:add(...)
+end
 
 local function index(req, res)
 	local contents = {
@@ -92,5 +98,6 @@ local x = cfg["Window Information"].X:value(0)
 	}	
 	template:make(res, contents)
 end
-kateadams:add("/", index)
+
+add("/", index)
 
