@@ -1,5 +1,7 @@
 local template = include("template.lua")
 
+local kateadams = hosts.get("*kateadams.eu")
+
 local function index(req, res)
 	local contents = {
 		
@@ -90,4 +92,5 @@ local x = cfg["Window Information"].X:value(0)
 	}	
 	template:make(res, contents)
 end
-reqs.AddPattern("*", "/", index)
+kateadams:add("/", index)
+
