@@ -1,6 +1,6 @@
 local template = include("template.lua")
 
-local kateadams = hosts.get("*kateadams.eu")
+local kateadams = hosts.get(".*kateadams.eu")
 
 local function index(req, res)
 	local contents = {
