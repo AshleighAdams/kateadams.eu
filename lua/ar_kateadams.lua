@@ -1,5 +1,5 @@
-local hosts = require("luaserver.hosts")
-local tags = require("luaserver.tags")
+local hosts = require("luaflare.hosts")
+local tags = require("luaflare.tags")
 
 local template = include("template.lua")
 

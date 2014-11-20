@@ -1,4 +1,4 @@
-local tags = require("luaserver.tags")
+local tags = require("luaflare.tags")
 
 local function escape_section(sect)
 	sect = sect:gsub("&", "and")
