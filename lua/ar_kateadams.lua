@@ -16,17 +16,18 @@ local function index(req, res)
 		
 		template:section("Projects"),
 			
-			template:project("LuaServer", tags.div
+			template:project("LuaFlare", tags.div
 				{
 					[[A complete HTTP web server written entirley in Lua.]]
 				},
 				{
 					title = "Source",
 					info = "GitHub",
-					url = "http://github.com/KateAdams/LuaServer"
+					url = "http://github.com/KateAdams/LuaFlare"
 				},
 				{ title = "Language", info = "Lua" },
-				{ title = "State", info = "Active" }
+				{ title = "State", info = "Active" },
+				{ title = "Documentation", info = "PDF", url = "/luaflare-documentation.pdf" }
 			),
 			
 			template:project("Consor", tags.div
