@@ -1,0 +1,19 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classConsor_1_1Control.html" title="The base control. " alt="" coords="5,369,120,402"/>
+<area shape="rect" id="node3" href="$classConsor_1_1AlignContainer.html" title="Aligns a control on the specified axis(s). " alt="" coords="181,5,339,38"/>
+<area shape="rect" id="node5" href="$classConsor_1_1BorderContainer.html" title="Adds padding to a control. " alt="" coords="177,61,343,94"/>
+<area shape="rect" id="node7" href="$classConsor_1_1Button.html" title="Consor::Button" alt="" coords="205,117,315,150"/>
+<area shape="rect" id="node9" href="$classConsor_1_1CheckBox.html" title="Consor::CheckBox" alt="" coords="193,173,327,206"/>
+<area shape="rect" id="node11" href="$classConsor_1_1FlowContainer.html" title="Consor::FlowContainer" alt="" coords="183,229,337,262"/>
+<area shape="rect" id="node13" href="$classConsor_1_1Graph.html" title="Consor::Graph" alt="" coords="207,285,313,318"/>
+<area shape="rect" id="node15" href="$classConsor_1_1HorizontalScrollbar.html" title="Consor::HorizontalScrollbar" alt="" coords="169,341,351,374"/>
+<area shape="rect" id="node17" href="$classConsor_1_1Label.html" title="Consor::Label" alt="" coords="209,397,311,430"/>
+<area shape="rect" id="node19" href="$classConsor_1_1ProgressBar.html" title="Consor::ProgressBar" alt="" coords="188,453,332,486"/>
+<area shape="rect" id="node23" href="$classConsor_1_1RadioBox.html" title="Consor::RadioBox" alt="" coords="196,509,324,542"/>
+<area shape="rect" id="node25" href="$classConsor_1_1ScrollContainer.html" title="A container that allows controls to overflow. " alt="" coords="180,565,340,598"/>
+<area shape="rect" id="node27" href="$classConsor_1_1TextBox.html" title="Consor::TextBox" alt="" coords="200,621,320,654"/>
+<area shape="rect" id="node31" href="$classConsor_1_1VerticalScrollbar.html" title="Consor::VerticalScrollbar" alt="" coords="177,677,343,710"/>
+<area shape="rect" id="node33" href="$classConsor_1_1WindowContainer.html" title="A window&#45;like container. " alt="" coords="173,733,347,766"/>
+<area shape="rect" id="node21" href="$classConsor_1_1VerticalProgressBar.html" title="Consor::VerticalProgressBar" alt="" coords="400,453,587,486"/>
+<area shape="rect" id="node29" href="$classConsor_1_1PasswordBox.html" title="The same as a TextBox, but is censored. " alt="" coords="417,621,569,654"/>
+</map>

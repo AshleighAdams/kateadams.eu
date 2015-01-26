@@ -1,0 +1,8 @@
+<map id="Consor::Graph" name="Consor::Graph">
+<area shape="rect" id="node2" href="$classConsor_1_1Control.html" title="The base control. " alt="" coords="189,201,304,228"/>
+<area shape="rect" id="node5" href="$classConsor_1_1AlignContainer.html" title="Aligns a control on the specified axis(s). " alt="" coords="405,259,563,285"/>
+<area shape="rect" id="node6" href="$classConsor_1_1FlowContainer.html" title="Consor::FlowContainer" alt="" coords="406,16,562,43"/>
+<area shape="rect" id="node7" href="$classConsor_1_1Label.html" title="Consor::Label" alt="" coords="433,133,535,160"/>
+<area shape="rect" id="node3" href="$classConsor_1_1Size.html" title="Consor::Size" alt="" coords="5,273,104,300"/>
+<area shape="rect" id="node4" href="$classConsor_1_1Hook.html" title="Consor::Hook\&lt; size\l_t, double \&gt;" alt="" coords="415,67,553,109"/>
+</map>

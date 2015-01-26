@@ -1,0 +1,4 @@
+<map id="Consor::Console::IConsoleRenderer" name="Consor::Console::IConsoleRenderer">
+<area shape="rect" id="node3" href="$classConsor_1_1Console_1_1ANSIConsoleRenderer.html" title="A console renderer implimentation that uses ANSI escape sequences. Linux/OSX Compatible. " alt="" coords="5,110,213,165"/>
+<area shape="rect" id="node5" href="$classConsor_1_1Console_1_1WindowsConsoleRenderer.html" title="A console renderer implimentation that uses Window&#39;s API. " alt="" coords="237,110,419,165"/>
+</map>

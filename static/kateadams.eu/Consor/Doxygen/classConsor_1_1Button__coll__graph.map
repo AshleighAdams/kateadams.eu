@@ -1,0 +1,7 @@
+<map id="Consor::Button" name="Consor::Button">
+<area shape="rect" id="node2" href="$classConsor_1_1Control.html" title="The base control. " alt="" coords="63,110,178,143"/>
+<area shape="rect" id="node6" href="$classConsor_1_1AlignContainer.html" title="Aligns a control on the specified axis(s). " alt="" coords="148,235,306,269"/>
+<area shape="rect" id="node11" href="$classConsor_1_1Label.html" title="Consor::Label" alt="" coords="23,235,124,269"/>
+<area shape="rect" id="node4" href="$classConsor_1_1Size.html" title="Consor::Size" alt="" coords="136,6,235,39"/>
+<area shape="rect" id="node14" href="$classConsor_1_1Hook.html" title="Event based system. " alt="" coords="330,235,484,269"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Controls/Label.hpp" name="Controls/Label.hpp">
+<area shape="rect" id="node3" href="$Button_8hpp.html" title="Controls/Button.hpp" alt="" coords="119,89,258,122"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="main.cpp" alt="" coords="235,171,310,205"/>
+<area shape="rect" id="node9" href="$Prompts_8cpp.html" title="Util/Prompts.cpp" alt="" coords="138,254,258,287"/>
+<area shape="rect" id="node11" href="$CheckBox_8hpp.html" title="Controls/CheckBox.hpp" alt="" coords="333,89,493,122"/>
+<area shape="rect" id="node21" href="$Graph_8hpp.html" title="Controls/Graph.hpp" alt="" coords="517,89,650,122"/>
+<area shape="rect" id="node25" href="$Label_8cpp.html" title="Controls/Label.cpp" alt="" coords="674,89,805,122"/>
+<area shape="rect" id="node5" href="$Button_8cpp.html" title="Controls/Button.cpp" alt="" coords="22,171,161,205"/>
+<area shape="rect" id="node13" href="$CheckBox_8cpp.html" title="Controls/CheckBox.cpp" alt="" coords="515,171,675,205"/>
+<area shape="rect" id="node15" href="$RadioBox_8hpp.html" title="Controls/RadioBox.hpp" alt="" coords="334,171,491,205"/>
+<area shape="rect" id="node17" href="$RadioBox_8cpp.html" title="Controls/RadioBox.cpp" alt="" coords="334,254,491,287"/>
+<area shape="rect" id="node23" href="$Graph_8cpp.html" title="Controls/Graph.cpp" alt="" coords="699,171,833,205"/>
+</map>
