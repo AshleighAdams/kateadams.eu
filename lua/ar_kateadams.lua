@@ -2,14 +2,7 @@ local hosts = require("luaflare.hosts")
 local tags = require("luaflare.tags")
 
 local template = include("template.lua")
-
-local kateadams = hosts.get("kateadams.eu")
-local self = hosts.get("self.kateadams.eu")
-
-local function add(...)
-	kateadams:add(...)
-	self:add(...)
-end
+local kateadams = hosts.get("*.kateadams.eu")
 
 local function index(req, res)
 	local contents = {
@@ -103,5 +96,5 @@ local x = cfg["Window Information"].X:value(0)
 	template:make(res, contents)
 end
 
-add("/", index)
+kateadams:add("/", index)
 
