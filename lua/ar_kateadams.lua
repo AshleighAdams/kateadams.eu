@@ -2,31 +2,25 @@ local hosts = require("luaflare.hosts")
 local tags = require("luaflare.tags")
 
 local template = include("template.lua")
-
-local kateadams = hosts.get("kateadams.eu")
-local self = hosts.get("self.kateadams.eu")
-
-local function add(...)
-	kateadams:add(...)
-	self:add(...)
-end
+local kateadams = hosts.get("*.kateadams.eu")
 
 local function index(req, res)
 	local contents = {
 		
 		template:section("Projects"),
 			
-			template:project("LuaServer", tags.div
+			template:project("LuaFlare", tags.div
 				{
 					[[A complete HTTP web server written entirley in Lua.]]
 				},
 				{
 					title = "Source",
 					info = "GitHub",
-					url = "http://github.com/KateAdams/LuaServer"
+					url = "http://github.com/KateAdams/LuaFlare"
 				},
 				{ title = "Language", info = "Lua" },
-				{ title = "State", info = "Active" }
+				{ title = "State", info = "Active" },
+				{ title = "Documentation", info = "PDF", url = "/luaflare-documentation.pdf" }
 			),
 			
 			template:project("Consor", tags.div
@@ -102,5 +96,5 @@ local x = cfg["Window Information"].X:value(0)
 	template:make(res, contents)
 end
 
-add("/", index)
+kateadams:add("/", index)
 
